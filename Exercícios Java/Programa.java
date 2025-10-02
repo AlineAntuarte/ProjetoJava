@@ -40,6 +40,11 @@ public class Programa {
                 System.out.println("Insira o valor da altura");
                 altura = teclado.nextDouble();
 
+                if (base <= 0 || altura <= 0) {
+                    System.out.println("Números nulos e/ou negativos não serão aceitos");
+                    break;
+                }
+
                 area = base * altura;
 
                 System.out.println("O valor da área é: " + area);
@@ -53,6 +58,11 @@ public class Programa {
                 base = teclado.nextDouble();
                 System.out.println("Insira o valor da altura");
                 altura = teclado.nextDouble();
+
+                if (base <= 0 || altura <= 0) {
+                    System.out.println("Números nulos e/ou negativos não serão aceitos");
+                    break;
+                }
 
                 area = (base * altura) / 2;
 
@@ -68,6 +78,11 @@ public class Programa {
                 System.out.println("Insira o valor do Cateto B");
                 catetoB = teclado.nextDouble();
 
+                if (catetoA <= 0 || catetoB <= 0) {
+                    System.out.println("Números nulos e/ou negativos não serão aceitos");
+                    break;
+                }
+
                 hipotenusa = (Math.pow(catetoA, 2)) + (Math.pow(catetoB, 2));
 
                 System.out.println("O valor da hipotenusa é: " + hipotenusa);
@@ -80,6 +95,12 @@ public class Programa {
                 System.out.println("Insira o valor do raio");
 
                 raio = teclado.nextDouble();
+
+                if (raio <= 0) {
+                    System.out.println("Números nulos e/ou negativos não serão aceitos");
+                    break;
+                }
+
                 area = Math.PI * raio * raio;
 
                 System.out.println("O valor da área do círculo é: " + area);
@@ -93,6 +114,12 @@ public class Programa {
                 System.out.println("Insira o valor do raio");
 
                 raio = teclado.nextDouble();
+
+                if (raio <= 0) {
+                    System.out.println("Números nulos e/ou negativos não serão aceitos");
+                    break;
+                }
+
                 area = 2 * Math.PI * raio;
 
                 System.out.println("O valor da área do círculo é: " + area);
@@ -107,8 +134,13 @@ public class Programa {
                 numFF = teclado.nextDouble();
                 numFFF = teclado.nextDouble();
 
-                media = (numF + numFF + numFFF)/3;
-                 System.out.println("O valor da média é: " + media);
+                if (numF <= 0 || numFF <= 0 || numFFF <= 0) {
+                    System.out.println("Números nulos e/ou negativos não serão aceitos");
+                    break;
+                }
+                
+                media = (numF + numFF + numFFF) / 3;
+                System.out.println("O valor da média é: " + media);
                 break;
 
             default:
