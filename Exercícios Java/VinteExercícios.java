@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; //Abrindo chamado para futuro uso do Scanner
 
 public class VinteExercícios {
     public static void main(String[] args) {
