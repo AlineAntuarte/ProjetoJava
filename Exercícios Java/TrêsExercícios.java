@@ -114,7 +114,8 @@ public class TrêsExercícios {
              * Em seguida, execute um teste de mesa com a entrada 5, 11; a saída deve ser
              * 1.8034.
              */
-            Scanner teclado = new Scanner(System.in);
+
+            /* Scanner teclado = new Scanner(System.in);
 
             System.out.println("Insira o valor da sua altura em pés");
             double pe = teclado.nextDouble();
@@ -127,7 +128,7 @@ public class TrêsExercícios {
             System.out.println("Sua altura nos EUA " + pe + "'" + pol + "''");
             System.out.println("Sua altura no Brasil");
 
-            teclado.close();
+            teclado.close(); */ 
         }
     }
 }
