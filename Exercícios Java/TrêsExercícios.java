@@ -104,7 +104,8 @@ public class TrêsExercícios {
 
                 System.out.println("O salário do colaborador 1 é: R$" + salF);
 
-                i = i++;
+                i = i + 1;
+                System.out.println("i = " + i);
             }
 
             System.out.println("O total pago pela empresa aos três é: R$" + totalEmp);
