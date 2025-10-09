@@ -26,8 +26,10 @@ public class TrêsExercícios {
          * teclado.close();
          */
 
+        // -----------------------------------------------------------------------------------------------------------------
+
         // Exercício 1
-        System.out.println("Exercício 1 | Área e Volume do Paralelepípedo");
+        /* System.out.println("Exercício 1 | Área e Volume do Paralelepípedo");
         Scanner teclado = new Scanner(System.in);
         System.out.println("Insira respectivamente comprimento, largura e altura");
 
@@ -56,7 +58,9 @@ public class TrêsExercícios {
         System.out.println("O custo total é de R$" + custoTotal);
 
         teclado.close();
-    }
+    } */
+
+    // -----------------------------------------------------------------------------------------------------------------
 
     {
         // Exercício 2
@@ -103,5 +107,9 @@ public class TrêsExercícios {
         System.out.println("O total pago pela empresa aos três é: R$" + totalEmp);
 
         teclado.close();
+    }
+    // -----------------------------------------------------------------------------------------------------------------
+    {
+
     }
 }
