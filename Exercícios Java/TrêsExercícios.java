@@ -95,40 +95,74 @@ public class TrêsExercícios {
          */
         // -----------------------------------------------------------------------------------------------------------------
 
+        /*
+         * {
+         * 
+         * // Exercício 3
+         * 
+         * Nos Estados Unidos da América, a altura de uma pessoa é medida em pés +
+         * polegadas. Por exemplo, considere uma pessoa com 5 pés + 11 polegadas
+         * de altura (escrito simplesmente como 5'11"); sabendo que
+         * 
+         * 1 pé equivale a 12 polegadas
+         * 1 polegada equivale a 2.54 centímetros
+         * 
+         * conclui-se que tal pessoa mede 180.34 cm, ou seja, aproximadamente 1.80 m.
+         * Elabore um pseudocódigo para um algoritmo que LÊ dois
+         * números inteiros representando os valores da altura de uma pessoa em pés +
+         * polegadas e ESCREVE o valor da altura em metros.
+         * Em seguida, execute um teste de mesa com a entrada 5, 11; a saída deve ser
+         * 1.8034.
+         */
+
+        /*
+         * Scanner teclado = new Scanner(System.in);
+         * 
+         * System.out.println("Insira o valor da sua altura em pés");
+         * double pe = teclado.nextDouble();
+         * System.out.println("Insira o valor da sua altura em polegadas");
+         * double pol = teclado.nextDouble();
+         * 
+         * double m = ((pe * 12) + (pol)) * 2.54;
+         * System.out.println(m / 100);
+         * 
+         * System.out.println("Sua altura nos EUA: " + pe + "'" + pol + "''");
+         * System.out.println("Sua altura no Brasil: " + m / 100 + " metros");
+         * 
+         * teclado.close();
+         * }
+         */
+
+        // Exercício 3.1
+
+        /*
+         * Elabore outro pseudocódigo, agora para um algoritmo que LÊ um único valor em
+         * metros e ESCREVE os valores em pés e polegadas correspondentes. Assuma que
+         * exista uma função chamada round que arredonda um número real para o inteiro
+         * mais próximo; por exemplo:
+         * round(3.14) = 3
+         * round(3.86) = 4
+         * round(5) = 5.
+         * Em seguida, execute um teste de mesa com a entrada 1.8; a saída deve ser
+         * 5,11.
+         */
         {
+            Scanner teclado = new Scanner(System.in);
 
-            // Exercício 3
+            System.out.println("Insira o valor da sua altura em metros");
+            double m = teclado.nextDouble();
+            double total = 0;
+            double pe = 0;
+            double pol = 0;
 
-            /*
-             * Nos Estados Unidos da América, a altura de uma pessoa é medida em pés +
-             * polegadas. Por exemplo, considere uma pessoa com 5 pés + 11 polegadas
-             * de altura (escrito simplesmente como 5'11"); sabendo que
-             * 
-             * 1 pé equivale a 12 polegadas
-             * 1 polegada equivale a 2.54 centímetros
-             * 
-             * conclui-se que tal pessoa mede 180.34 cm, ou seja, aproximadamente 1.80 m.
-             * Elabore um pseudocódigo para um algoritmo que LÊ dois
-             * números inteiros representando os valores da altura de uma pessoa em pés +
-             * polegadas e ESCREVE o valor da altura em metros.
-             * Em seguida, execute um teste de mesa com a entrada 5, 11; a saída deve ser
-             * 1.8034.
-             */
+            total = m * 3.28084;
+            pe = Math.floor(total);
+            pol = Math.round((total - pe) * 12);
 
-            /* Scanner teclado = new Scanner(System.in);
+            System.out.println("Sua altura no Brasil: " + m + " metros");
+            System.out.println("Sua altura nos EUA: " + (int)pe + "'" + (int)pol + "''");
 
-            System.out.println("Insira o valor da sua altura em pés");
-            double pe = teclado.nextDouble();
-            System.out.println("Insira o valor da sua altura em polegadas");
-            double pol = teclado.nextDouble();
-
-            double cm = ((pe * 12) + (pol)) * 2.54;
-            System.out.println(cm / 100);
-
-            System.out.println("Sua altura nos EUA " + pe + "'" + pol + "''");
-            System.out.println("Sua altura no Brasil");
-
-            teclado.close(); */ 
+            teclado.close();
         }
     }
 }
