@@ -4,7 +4,7 @@ public class TrêsExercícios {
     public static void main(String[] args) {
 
         /*
-         * Objeto para ler informações do teclado
+         * --- >> Objeto para ler informações do teclado << ---
          * Scanner teclado = new Scanner(System.in);
          * 
          * 
@@ -65,35 +65,69 @@ public class TrêsExercícios {
 
         // -----------------------------------------------------------------------------------------------------------------
 
-      /*   {
-            // Exercício 2
+        /*
+         * {
+         * // Exercício 2
+         * 
+         * System.out.println("Exercício 2 | Salário hora");
+         * Scanner teclado = new Scanner(System.in);
+         * int i = 0;
+         * double totalEmp = 0;
+         * double salF = 0;
+         * while (i < 3) {
+         * System.out.println("Insira respectivamente o valor e a hora trabalhada");
+         * double salHora = teclado.nextDouble();
+         * double hora = teclado.nextDouble();
+         * 
+         * salF = salHora * hora;
+         * totalEmp = totalEmp + salF;
+         * 
+         * System.out.println("O salário do colaborador 1 é: R$" + salF);
+         * 
+         * i = i + 1;
+         * System.out.println("i = " + i);
+         * }
+         * 
+         * System.out.println("O total pago pela empresa aos três é: R$" + totalEmp);
+         * 
+         * teclado.close();
+         * }
+         */
+        // -----------------------------------------------------------------------------------------------------------------
 
-            System.out.println("Exercício 2 | Salário hora");
+        {
+
+            // Exercício 3
+
+            /*
+             * Nos Estados Unidos da América, a altura de uma pessoa é medida em pés +
+             * polegadas. Por exemplo, considere uma pessoa com 5 pés + 11 polegadas
+             * de altura (escrito simplesmente como 5'11"); sabendo que
+             * 
+             * 1 pé equivale a 12 polegadas
+             * 1 polegada equivale a 2.54 centímetros
+             * 
+             * conclui-se que tal pessoa mede 180.34 cm, ou seja, aproximadamente 1.80 m.
+             * Elabore um pseudocódigo para um algoritmo que LÊ dois
+             * números inteiros representando os valores da altura de uma pessoa em pés +
+             * polegadas e ESCREVE o valor da altura em metros.
+             * Em seguida, execute um teste de mesa com a entrada 5, 11; a saída deve ser
+             * 1.8034.
+             */
             Scanner teclado = new Scanner(System.in);
-            int i = 0;
-            double totalEmp = 0;
-            double salF = 0;
-            while (i < 3) {
-                System.out.println("Insira respectivamente o valor e a hora trabalhada");
-                double salHora = teclado.nextDouble();
-                double hora = teclado.nextDouble();
 
-                salF = salHora * hora;
-                totalEmp = totalEmp + salF;
+            System.out.println("Insira o valor da sua altura em pés");
+            double pe = teclado.nextDouble();
+            System.out.println("Insira o valor da sua altura em polegadas");
+            double pol = teclado.nextDouble();
 
-                System.out.println("O salário do colaborador 1 é: R$" + salF);
+            double cm = ((pe * 12) + (pol)) * 2.54;
+            System.out.println(cm / 100);
 
-                i = i + 1;
-                System.out.println("i = " + i);
-            }
-
-            System.out.println("O total pago pela empresa aos três é: R$" + totalEmp);
+            System.out.println("Sua altura nos EUA " + pe + "'" + pol + "''");
+            System.out.println("Sua altura no Brasil");
 
             teclado.close();
         }
- */
-        // -----------------------------------------------------------------------------------------------------------------
-
-        // Exercício 3
     }
 }
