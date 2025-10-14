@@ -77,7 +77,7 @@ public class App2 {
         }
 
         System.out.println("Insira um número: ");
-            
+
         String res = switch (teclado.nextInt()) {
             case 1 -> "Um";
             case 2 -> "Dois";
@@ -86,6 +86,7 @@ public class App2 {
             default -> "Nenhum de 1 a 4";
         };
 
+        System.out.println(res);
         teclado.close();
     }
 }
