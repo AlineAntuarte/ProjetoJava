@@ -2,6 +2,13 @@
 git config --global user.name "AlineAntuarte"
 git config --global user.email "aline.ba@aluno.ifsc.edu.br"
 
+Opcional, mas muito útil, é configurar o Git para salvar sua senha por um tempo.
+
+```bash
+# Salva suas credenciais em cache por 1 hora (3600 segundos)
+git config --global credential.helper 'cache --timeout=3600'
+```
+
 # 2. Criar ou clonar repositório
 git init                           # inicia um repositório local
 git clone <url-do-repo>           # clona um repositório existente
