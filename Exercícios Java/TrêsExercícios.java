@@ -117,7 +117,7 @@ public class TrêsExercícios {
             double m = ((pe * 12) + (pol)) * 2.54;
             System.out.println(m / 100);
 
-            System.out.println("Sua altura nos EUA: " + (int)pe + "'" + (int)pol + "''");
+            System.out.println("Sua altura nos EUA: " + (int) pe + "'" + (int) pol + "''");
             System.out.println("Sua altura no Brasil: " + m / 100 + " metros");
 
         }
