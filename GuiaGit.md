@@ -7,8 +7,8 @@ Este é um guia de referência para os comandos mais comuns do Git, desde a conf
 Antes de começar, configure seu nome de usuário e e-mail. Essas informações serão associadas a todos os *commits* que você criar.
 
 ```bash
-git config --global user.name "Seu Nome"
-git config --global user.email "seu-email@exemplo.com"
+git config --global user.name "AlineAntuarte"
+git config --global user.email "aline.ba@aluno.ifsc.edu.br"
 ```
 
 > **Dica:** Para evitar digitar sua senha a cada `push`, você pode armazená-la em cache temporariamente.
