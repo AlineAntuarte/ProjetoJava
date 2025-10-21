@@ -11,24 +11,27 @@ public class App3 {
          * acertá-la. Note-se de que se tratam de duas condições.
          */
 
-        System.out.println("Exercício 1");
-        String senha;
+        // System.out.println("Exercício 1");
+        // String senha;
 
-        int c = 3;
-        System.out.println("Insira a senha. Você tem três chances.");
-        senha = usuario.nextLine();
+        // int c = 3;
+        // System.out.println("Insira a senha. Você tem três chances.");
 
-        if (senha.equals("alfa")) {
-            System.out.println("Senha correta.");
-        } else {
-            for (int i = 0; i < 3; i++) {
-                c--;
-                System.out.println("Senha incorreta. Te restam " + c + " chance(s).");
-                System.out.println("i = " + i + "   c = " + c);
-            }
-        }
+        // for (int i = 0; i < 3; i++) {
+        //     c--;
+        //     senha = usuario.nextLine();
 
-        System.out.println("Chances esgotadas.");
+        //     if (!senha.equals("alfa")) {
+        //         System.out.println("Senha incorreta. Te restam " + c + " chance(s).");
+        //         System.out.println("i = " + i + "   c = " + c);
+        //     } else {
+        //         System.out.println("Senha correta.");
+        //         break;
+        //     }
+
+        // }
+
+        // System.out.println("FIM.");
 
         System.out.println("Exercício 2");
         /*
@@ -37,7 +40,7 @@ public class App3 {
          * requisitados.
          */
 
-        System.out.println("Exercício 3");
+        // System.out.println("Exercício 3");
         /*
          * 3. Faça um programa que continuamente pede números inteiros e apenas para se
          * receber um número negativo na entrada. Este programa deve verificar se o
