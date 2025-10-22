@@ -4,7 +4,7 @@ public class App3 {
     public static void main(String[] args) {
         Scanner usuario = new Scanner(System.in);
 
-        // Exercícios
+        // Exercícios | Java
 
         /*
          * 1. Faça um programa que possui uma senha fixa e o usuário tem 3 chances para
@@ -60,7 +60,7 @@ public class App3 {
 
         // }
 
-        System.out.println("Exercício 3");
+        // System.out.println("Exercício 3");
         /*
          * 3. Faça um programa que continuamente pede números inteiros e apenas para se
          * receber um número negativo na entrada.
