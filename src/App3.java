@@ -18,16 +18,16 @@ public class App3 {
         // System.out.println("Insira a senha. Você tem três chances.");
 
         // for (int i = 0; i < 3; i++) {
-        //     c--;
-        //     senha = usuario.nextLine();
+        // c--;
+        // senha = usuario.nextLine();
 
-        //     if (!senha.equals("alfa")) {
-        //         System.out.println("Senha incorreta. Te restam " + c + " chance(s).");
-        //         System.out.println("i = " + i + "   c = " + c);
-        //     } else {
-        //         System.out.println("Senha correta.");
-        //         break;
-        //     }
+        // if (!senha.equals("alfa")) {
+        // System.out.println("Senha incorreta. Te restam " + c + " chance(s).");
+        // System.out.println("i = " + i + " c = " + c);
+        // } else {
+        // System.out.println("Senha correta.");
+        // break;
+        // }
 
         // }
 
@@ -39,6 +39,25 @@ public class App3 {
          * número deseja-se saber. Em seguida imprima o número de múltiplos do número
          * requisitados.
          */
+
+        System.out.println("Insira um número inteiro");
+        int num = usuario.nextInt();
+        System.out.println("Quantos múltiplos deste número deseja saber?");
+        int quantMult = usuario.nextInt();
+
+        int i = 0;
+        int x = 0;
+        int multiplo = 0;
+
+        while (i < quantMult) {
+            i++;
+
+            multiplo = num * x;
+            x++;
+
+            System.out.println("Um multiplo de '" + num + "' pode ser: " + multiplo);
+
+        }
 
         // System.out.println("Exercício 3");
         /*
