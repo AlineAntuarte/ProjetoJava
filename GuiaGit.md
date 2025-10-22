@@ -8,18 +8,19 @@ Antes de começar, configure seu nome de usuário e e-mail. Essas informações 
 
 ```bash
 git config --global user.name "AlineAntuarte"
+```
+```bash
 git config --global user.email "aline.ba@aluno.ifsc.edu.br"
 ```
 
 > **Dica:** Para evitar digitar sua senha a cada `push`, você pode armazená-la em cache temporariamente.
->
+> 
+> Salva as credenciais em cache por 1 hora (3600 segundos)
 > ```bash
-> # Salva as credenciais em cache por 1 hora (3600 segundos)
 > git config --global credential.helper 'cache --timeout=3600'
 > ```
->
+> Salva as credenciais em cache por 4 horas (14400 segundos)
 > ```bash
-> # Salva as credenciais em cache por 4 horas (14400 segundos)
 > git config --global credential.helper 'cache --timeout=14400'
 > ```
 
