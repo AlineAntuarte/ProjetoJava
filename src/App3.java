@@ -11,56 +11,56 @@ public class App3 {
          * acertá-la. Note-se de que se tratam de duas condições.
          */
 
-        // System.out.println("Exercício 1");
-        // String senha;
+        System.out.println("Exercício 1");
+        String senha;
 
-        // int c = 3;
-        // System.out.println("Insira a senha. Você tem três chances.");
+        int c = 3;
+        System.out.println("Insira a senha. Você tem três chances.");
 
-        // for (int i = 0; i < 3; i++) {
-        // c--;
-        // senha = usuario.nextLine();
+        for (int i = 0; i < 3; i++) {
+            c--;
+            senha = usuario.nextLine();
 
-        // if (!senha.equals("alfa")) {
-        // System.out.println("Senha incorreta. Te restam " + c + " chance(s).");
-        // System.out.println("i = " + i + " c = " + c);
-        // } else {
-        // System.out.println("Senha correta.");
-        // break;
-        // }
+            if (!senha.equals("alfa")) {
+                System.out.println("Senha incorreta. Te restam " + c + " chance(s).");
 
-        // }
+            } else {
+                System.out.println("Senha correta.");
+                break;
+            }
 
-        // System.out.println("FIM.");
+        }
 
-        // System.out.println("Exercício 2");
-        // /*
-        // * 2. Faça um programa que pergunte um número inteiro e quantos múltiplos
-        // deste
-        // * número deseja-se saber. Em seguida imprima o número de múltiplos do número
-        // * requisitados.
-        // */
+        System.out.println("FIM.");
 
-        // System.out.println("Insira um número inteiro");
-        // int num = usuario.nextInt();
-        // System.out.println("Quantos múltiplos deste número deseja saber?");
-        // int quantMult = usuario.nextInt();
+        System.out.println("Exercício 2");
+        /*
+         * 2. Faça um programa que pergunte um número inteiro e quantos múltiplos
+         * deste
+         * número deseja-se saber. Em seguida imprima o número de múltiplos do número
+         * requisitados.
+         */
 
-        // int i = 0;
-        // int x = 0;
-        // int multiplo = 0;
+        System.out.println("Insira um número inteiro");
+        int num = usuario.nextInt();
+        System.out.println("Quantos múltiplos deste número deseja saber?");
+        int quantMult = usuario.nextInt();
 
-        // while (i < quantMult) {
-        // i++;
+        int i = 0;
+        int x = 0;
+        int multiplo = 0;
 
-        // multiplo = num * x;
-        // x++;
+        while (i < quantMult) {
+            i++;
 
-        // System.out.println("Um multiplo de '" + num + "' pode ser: " + multiplo);
+            multiplo = num * x;
+            x++;
 
-        // }
+            System.out.println("Um multiplo de '" + num + "' pode ser: " + multiplo);
 
-        // System.out.println("Exercício 3");
+        }
+
+        System.out.println("Exercício 3");
         /*
          * 3. Faça um programa que continuamente pede números inteiros e apenas para se
          * receber um número negativo na entrada.
@@ -69,47 +69,47 @@ public class App3 {
          * verificar se o número é múltiplos de 3, 5 ou 7.
          */
 
-        // System.out.println("Insira um número inteiro positivo não nulo");
-        // int num = usuario.nextInt();
-        // while (num >= 1) {
+        System.out.println("Insira um número inteiro positivo não nulo");
+        int num2 = usuario.nextInt();
+        while (num2 >= 1) {
 
-        //     boolean valorImpPar = num % 2 == 0;
-        //     boolean mult357;
-        //     if (valorImpPar) {
-        //         System.out.println("O número '" + num + "' é par");
+            boolean valorImpPar = num2 % 2 == 0;
+            boolean mult357;
+            if (valorImpPar) {
+                System.out.println("O número '" + num2 + "' é par");
 
-        //         mult357 = num % 3 == 0;
-        //         if (mult357) {
-        //             System.out.println("'" + num + "' é múltiplo de '3'");
-        //             System.out.println(mult357);
-        //         } else {
-        //             System.out.println("'" + num + "' não é múltiplo de '3'");
-        //         }
+                mult357 = num2 % 3 == 0;
+                if (mult357) {
+                    System.out.println("'" + num2 + "' é múltiplo de '3'");
+                    System.out.println(mult357);
+                } else {
+                    System.out.println("'" + num2 + "' não é múltiplo de '3'");
+                }
 
-        //         mult357 = num % 5 == 0;
-        //         if (mult357) {
-        //             System.out.println("'" + num + "' é múltiplo de '5'");
-        //         } else {
-        //             System.out.println("'" + num + "' não é múltiplo de '5'");
-        //         }
+                mult357 = num2 % 5 == 0;
+                if (mult357) {
+                    System.out.println("'" + num2 + "' é múltiplo de '5'");
+                } else {
+                    System.out.println("'" + num2 + "' não é múltiplo de '5'");
+                }
 
-        //         mult357 = num % 7 == 0;
-        //         if (mult357) {
-        //             System.out.println("'" + num + "' é múltiplo de '7'");
-        //             System.out.println(mult357);
+                mult357 = num2 % 7 == 0;
+                if (mult357) {
+                    System.out.println("'" + num2 + "' é múltiplo de '7'");
+                    System.out.println(mult357);
 
-        //         } else {
-        //             System.out.println("'" + num + "' não é múltiplo de '7'");
-        //         }
+                } else {
+                    System.out.println("'" + num2 + "' não é múltiplo de '7'");
+                }
 
-        //     } else {
-        //         System.out.println("O número '" + num + "' é impar");
-        //     }
+            } else {
+                System.out.println("O número '" + num2 + "' é impar");
+            }
 
-        //     num = usuario.nextInt();
-        // }
-        // System.out.println("Números negativos ou nulos não serão aceitos. Programa encerrado.");
-        // System.out.println("Fim.");
+            num2 = usuario.nextInt();
+        }
+        System.out.println("Números negativos ou nulos não serão aceitos. Programa encerrado.");
+        System.out.println("Fim.");
 
         usuario.close();
     }
