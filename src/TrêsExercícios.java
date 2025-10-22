@@ -3,7 +3,7 @@ import java.util.Scanner; //Abrindo chamado para futuro uso do Scanner
 public class TrêsExercícios {
     public static void main(String[] args) {
 
-        // --- >> Objeto para ler informações do teclado << ---
+        // --------- >> Objeto para ler informações do teclado << ---------
         Scanner teclado = new Scanner(System.in);
 
         /*
@@ -11,13 +11,14 @@ public class TrêsExercícios {
          * 
          * Abaixo temos variáveis, int = número inteiro, double = número decimal e
          * String = letras, palavras, etc.
-         * Quando colocamos --> Variável = alguma coisa <-- estamos declarando ela,
+         * Quando colocamos ------> Variável = alguma coisa <------ estamos declarando
+         * ela,
          * nesse caso, não igualamos a 0,
          * mas deixamos o usuário inserir o valor por meio do Scanner.
          * 
-         * -- 'teclado.nextInt'
-         * -- 'teclado.nextDouble;'
-         * -- 'teclado.nextLine;'
+         * ------ 'teclado.nextInt'
+         * ------ 'teclado.nextDouble;'
+         * ------ 'teclado.nextLine;'
          * 
          * 
          * int numInteiro = teclado.nextInt();
@@ -28,7 +29,7 @@ public class TrêsExercícios {
          * teclado.close();
          */
 
-        // -----------------------------------------------------------------------------------------------------------------
+        System.out.println("------------------------------------------");
 
         // Exercício 1
 
@@ -60,7 +61,8 @@ public class TrêsExercícios {
 
         System.out.println("O custo total é de R$" + custoTotal);
 
-        // -----------------------------------------------------------------------------------------------------------------
+        System.out.println("------------------------------------------");
+
         {
             // Exercício 2
 
@@ -87,7 +89,7 @@ public class TrêsExercícios {
 
         }
 
-        // -----------------------------------------------------------------------------------------------------------------
+        System.out.println("------------------------------------------");
 
         {
 
@@ -122,6 +124,9 @@ public class TrêsExercícios {
 
         }
 
+        System.out.println("------------------------------------------");
+        System.out.println("Exercício 3.1");
+
         // Exercício 3.1
 
         /*
@@ -152,6 +157,7 @@ public class TrêsExercícios {
             System.out.println("Sua altura nos EUA: " + (int) pe + "'" + (int) pol + "''");
 
             teclado.close();
+            System.out.println("------------------------------------------");
         }
     }
 }
