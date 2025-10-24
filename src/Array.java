@@ -61,10 +61,33 @@ public class Array {
         System.out.println("Quantos termos da série Fibonacci deseja ver?");
         int termos = usuario.nextInt();
         int Fibonacci[] = new int[termos];
+
         int a = 0;
         int b = 1;
-        for (int i = 0; i < termos; i++){
-            Fibonacci [termos] = a;
+
+        // 0 1 2
+
+        for (int i = 0; i < termos; i++) {
+
+            if (i == 0) {
+                Fibonacci[termos] = 0;
+                System.out.println("Termo " + i + " da série Fibonacci: " + Fibonacci[termos]);
+
+            } else if (i == 1) {
+                Fibonacci[termos] = 1;
+                System.out.println(i + "° Termo da série Fibonacci: " + Fibonacci[termos]);
+
+            } else {
+                Fibonacci[termos] = a + b;
+                System.out.println(i + "° Termo da série Fibonacci: " + Fibonacci[termos]);
+
+                if(i % 2 != 0){
+                    a = a + b;
+                }else{
+                    b = a + b;
+                }
+            }
+
         }
 
         // Exercícios
