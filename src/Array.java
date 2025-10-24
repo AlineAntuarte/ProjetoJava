@@ -10,41 +10,62 @@ public class Array {
         // 1. Dado um vetor com 10 números reais, faça um algoritmo que percorra o vetor
         // e imprima o seu maior elemento.
 
-       /*  USANDO LAÇO FOR PARA INSERIR NÚMEROS COM INDENTAÇÃO, 10 SEMPRE VAI SER O MAIOR ASSIM, É UM PADRÃO.
-        double maiorNum = 0;
+        /*
+         * USANDO LAÇO FOR PARA INSERIR NÚMEROS COM INDENTAÇÃO, 10 SEMPRE VAI SER O
+         * MAIOR ASSIM, É UM PADRÃO.
+         * double maiorNum = 0;
+         * 
+         * double num[] = new double[10];
+         * for (int i = 0; i < 10; i++) {
+         * System.out.println("i = " + i);
+         * ;
+         * num[i] = i+1;
+         * 
+         * if (num[i] > maiorNum){
+         * maiorNum = num[i];
+         * }
+         * }
+         * 
+         * System.out.println("O maior número do array é: " + maiorNum);
+         */
 
-        double num[] = new double[10];
-        for (int i = 0; i < 10; i++) {
-        System.out.println("i = " + i);
-;
-            num[i] = i+1;
+        /*
+         * USANDO LAÇO FOR COM INSERÇÃO DO USUÁRIO, PODE SER QUALQUER NÚMERO, O MAIOR
+         * NÃO É ÓBVIO.
+         * double maiorNum = 0;
+         * 
+         * double num[] = new double[10];
+         * for (int i = 0; i < 10; i++) {
+         * System.out.println("i = " + i);
+         * System.out.println("Insira um número.");
+         * 
+         * num[i] = usuario.nextDouble();
+         * 
+         * if (num[i] > maiorNum){
+         * maiorNum = num[i];
+         * }
+         * }
+         * 
+         * System.out.println("O maior número do array é: " + maiorNum);
+         */
 
-            if (num[i] > maiorNum){
-                maiorNum = num[i];
-            }
-        }
-
-        System.out.println("O maior número do array é: " + maiorNum); */
-
-        /*USANDO LAÇO FOR COM INSERÇÃO DO USUÁRIO, PODE SER QUALQUER NÚMERO, O MAIOR NÃO É ÓBVIO.
-        double maiorNum = 0;
-
-        double num[] = new double[10];
-        for (int i = 0; i < 10; i++) {
-            System.out.println("i = " + i);
-            System.out.println("Insira um número.");
-
-            num[i] = usuario.nextDouble();
-
-            if (num[i] > maiorNum){
-                maiorNum = num[i];
-            }
-        }
-
-        System.out.println("O maior número do array é: " + maiorNum); */
-        
         // 2. Utilizando vetor, imprimir os n primeiros termos da série de Fibonacci:
         // 1 1 2 3 5 8 ... n
+
+        /*
+         * A série de Fibonacci é uma sequência numérica em que cada termo é a soma dos
+         * dois anteriores, começando com '0' e '1'. A sequência começa com
+         * \(0,1,1,2,3,5,8,13,21,34,\dots \), e é encontrada na natureza em locais como
+         * o miolo de um girassol e o arranjo das pétalas de uma flor. 
+         */
+        System.out.println("Quantos termos da série Fibonacci deseja ver?");
+        int termos = usuario.nextInt();
+        int Fibonacci[] = new int[termos];
+        int a = 0;
+        int b = 1;
+        for (int i = 0; i < termos; i++){
+            Fibonacci [termos] = a;
+        }
 
         // Exercícios
         // 1. Defina dois vetores com 5 elementos cada. Faça um algoritmo que calcule e
