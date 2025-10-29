@@ -26,6 +26,7 @@ public class Array {
         // MAIOR ASSIM, É UM PADRÃO.
         System.out.println("----------------------------");
         System.out.println("Exercício de Exemplo - 1");
+        System.out.println("Primeira Parte");
         System.out.println("----------------------------");
 
         double maiorNum = 0;
@@ -42,6 +43,10 @@ public class Array {
         }
 
         System.out.println("O maior número do array é: " + maiorNum);
+
+        System.out.println("----------------------------");
+        System.out.println("Segunda Parte");
+        System.out.println("----------------------------");
 
         // USANDO LAÇO FOR COM INSERÇÃO DO USUÁRIO, PODE SER QUALQUER NÚMERO, O MAIOR
         // NÃO É ÓBVIO.
