@@ -198,8 +198,8 @@ public class Array {
 
         System.out.println("A maior nota é: " + maiorNota);
         System.out.println("A menor nota é: " + menorNota);
-        System.out.println("A nota média de 38 alunos é: " + media);
+        System.out.println("A nota média de 38 alunos é: " + media);*/
 
-        usuario.close(); */
+        usuario.close(); 
     }
 }
