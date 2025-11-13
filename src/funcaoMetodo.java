@@ -110,16 +110,37 @@ public class funcaoMetodo {
     }
 
     public static void imprime100() {
-        for (int i = 0; i <= 100; i++) {
+        System.out.println("Irei imprimir de 1  a 100");
+        for (int i = 1; i <= 100; i++) {
             System.out.print(i + " ");
         }
         System.out.println();
     }
 
     public static void imprimeN() {
+        System.out.println("Irei imprimir de 1 até o número escolhido");
+        int n = scanner.nextInt();
+        for (int i = 1; i <= n; i++) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
     }
 
     public static void nomes5() {
+        System.out.println("Irei imprimir 5 nomes escolhidos");
+        int i = 0;
+        String nomes[] = new String[5];
+
+        while (i < 5) {
+            nomes[i] = scanner.nextLine();
+            i++;
+        }
+        
+        System.out.println("Nomes recebidos, irei imprimir.");
+        while (i < 5) {
+            System.out.println(nomes[i]);
+            i++;
+        }
     }
 
     public static void adicao() {
@@ -160,5 +181,5 @@ public class funcaoMetodo {
 
     public static void perfeito() {
     }
-    
+
 }
